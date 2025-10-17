@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'profile_page.dart';
+import 'package:flutter_profile_alfiaulia/latihangabungan.dart';
+import 'package:flutter_profile_alfiaulia/profile.page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfilePage(),
+      home: Latihangabungan(),
     );
   }
 }
