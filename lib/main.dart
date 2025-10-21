@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_profile_alfiaulia/latihangabungan.dart';
-import 'package:flutter_profile_alfiaulia/profile.page.dart';
-
+import 'widget_kompleks.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +10,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Widget Kompleks',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const WidgetKompleks(),
       debugShowCheckedModeBanner: false,
-      home: Latihangabungan(),
     );
   }
 }
