@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'tugas_navigasi/home_page.dart';
+import 'home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,8 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Navigasi dan Form',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: 'Navigasi & Form Validation',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.grey[100],
+        inputDecorationTheme: const InputDecorationTheme(
+          border: OutlineInputBorder(),
+        ),
+      ),
       home: const HomePage(),
       debugShowCheckedModeBanner: false,
     );
